@@ -1,4 +1,4 @@
-package com.jounin.kurenai;
+package com.jounin.kurenai.controller;
 
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
