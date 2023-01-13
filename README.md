@@ -6,6 +6,10 @@
 
 <br>
 <br>
+<div align="center">
+<img alt="GitHub last commit" src="https://img.shields.io/github/last-commit/henriquemap/kurenai">
+</div>
+<br>
 <img src="https://img.shields.io/github/issues/henriquemap/kurenai">
 <img src="https://img.shields.io/github/forks/henriquemap/kurenai">
 <img src="https://img.shields.io/github/stars/henriquemap/Kurenai">
