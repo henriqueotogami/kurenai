@@ -11,6 +11,8 @@ import javafx.stage.Stage;
 
 public class Counter extends Application {
 
+    private int pressedCounter = 0;
+
     @Override
     public void start(final Stage primaryStage) throws Exception {
         System.out.println("Counter - start(): BEGIN");
@@ -20,6 +22,20 @@ public class Counter extends Application {
 
         final Button buttonIncrement = new Button("+");
         final Button buttonDecrement = new Button("-");
+
+        buttonDecrement.setOnAction(
+            event -> {
+                pressedCounter--;
+                labelNumber.setText(Integer.toString(pressedCounter));
+            }
+        );
+
+        buttonIncrement.setOnAction(
+            event -> {
+                pressedCounter++;
+                labelNumber.setText(Integer.toString(pressedCounter));
+            }
+        );
 
         final HBox horizontalBox = new HBox();
         horizontalBox.setAlignment(Pos.CENTER);
