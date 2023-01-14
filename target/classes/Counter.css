@@ -1,0 +1,14 @@
+.contents {
+    -fx-background-color: #202024;
+    -fx-font-family: Oswald;
+}
+
+.style-title{
+    -fx-text-fill: #cc99cc;
+    -fx-font-size: 28px;
+}
+
+.style-number{
+    -fx-text-fill: #663399;
+    -fx-font-size: 22px;
+}

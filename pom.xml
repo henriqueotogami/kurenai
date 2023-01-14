@@ -72,5 +72,13 @@
                 </executions>
             </plugin>
         </plugins>
+        <resources>
+            <resource>
+                <directory>src/main/resources/com/jounin/kurenai/controller</directory>
+                <includes>
+                    <include>**/*.css</include>
+                </includes>
+            </resource>
+        </resources>
     </build>
 </project>
