@@ -18,7 +18,7 @@ public class Wizard extends Application {
 
     @Override
     public void start(final Stage primaryStage) throws Exception {
-        System.out.println("Counter - start(): BEGIN");
+        System.out.println("Wizard - start(): BEGIN");
         mainWindow = primaryStage;
         createStepOne();
         createStepTwo();
@@ -26,11 +26,11 @@ public class Wizard extends Application {
         mainWindow.setScene(stepOne);
         mainWindow.setTitle("Wizard :: Step One ");
         mainWindow.show();
-        System.out.println("Counter - start(): END");
+        System.out.println("Wizard - start(): END");
     }
 
     private void createStepOne(){
-        System.out.println("Counter - createStepOne(): BEGIN");
+        System.out.println("Wizard - createStepOne(): BEGIN");
         final Button buttonNextStep = new Button("Go to second step");
 
         buttonNextStep.setOnAction(
@@ -46,11 +46,11 @@ public class Wizard extends Application {
         final int widthScene = 400;
         final int heightScene = 400;
         stepOne = new Scene(horizontalBox,widthScene,heightScene);
-        System.out.println("Counter - createStepOne(): END");
+        System.out.println("Wizard - createStepOne(): END");
     }
 
     private void createStepTwo() {
-        System.out.println("Counter - createStepTwo(): BEGIN");
+        System.out.println("Wizard - createStepTwo(): BEGIN");
         final Button buttonPreviousStep = new Button("Back to first step");
         final Button buttonNextStep = new Button("Go to third step");
 
@@ -75,10 +75,10 @@ public class Wizard extends Application {
         final int widthScene = 400;
         final int heightScene = 400;
         stepTwo = new Scene(horizontalBox,widthScene,heightScene);
-        System.out.println("Counter - createStepTwo(): END");
+        System.out.println("Wizard - createStepTwo(): END");
     }
     private void createStepThree() {
-        System.out.println("Counter - createStepThree(): BEGIN");
+        System.out.println("Wizard - createStepThree(): BEGIN");
         final Button buttonPreviousStep = new Button("Back to second step");
         final Button buttonExit = new Button("Exit app");
 
@@ -102,7 +102,7 @@ public class Wizard extends Application {
         final int widthScene = 400;
         final int heightScene = 400;
         stepThree = new Scene(horizontalBox,widthScene,heightScene);
-        System.out.println("Counter - createStepThree(): END");
+        System.out.println("Wizard - createStepThree(): END");
     }
 
     public static void main(final String[] args) {
