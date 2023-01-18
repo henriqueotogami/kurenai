@@ -8,7 +8,25 @@
     -fx-font-size: 28px;
 }
 
-.style-number{
+.style-buttons {
+    -fx-background-color: #339933;
+    -fx-font-size: 40px;
     -fx-text-fill: #663399;
-    -fx-font-size: 22px;
+    -fx-font-size: 24px;
+    -fx-min-width: 60px;
+    -fx-min-height: 60px;
+    -fx-background-radius: 10px;
+}
+
+.style-zero-number{
+    -fx-text-fill: #663399;
+    -fx-font-size: 40px;
+}
+
+.style-positive-number{
+    -fx-text-fill: #009966;
+}
+
+.style-negative-number {
+    -fx-text-fill: #CC0033;
 }

@@ -21,22 +21,25 @@ public class Counter extends Application {
         final Label labelNumber = new Label("0");
 
         labelTitle.getStyleClass().add("style-title");
-        labelNumber.getStyleClass().add("style-number");
+        labelNumber.getStyleClass().add("style-zero-number");
 
         final Button buttonIncrement = new Button("+");
         final Button buttonDecrement = new Button("-");
 
+        buttonIncrement.getStyleClass().add("style-buttons");
+        buttonDecrement.getStyleClass().add("style-buttons");
+
         buttonDecrement.setOnAction(
             event -> {
                 pressedCounter--;
-                labelNumber.setText(Integer.toString(pressedCounter));
+                updateLabelNumber(labelNumber);
             }
         );
 
         buttonIncrement.setOnAction(
             event -> {
                 pressedCounter++;
-                labelNumber.setText(Integer.toString(pressedCounter));
+                updateLabelNumber(labelNumber);
             }
         );
 
@@ -66,6 +69,17 @@ public class Counter extends Application {
         primaryStage.setScene(mainScene);
         primaryStage.show();
         System.out.println("Counter - start(): END");
+    }
+
+    private void updateLabelNumber(final Label label) {
+        label.setText(Integer.toString(pressedCounter));
+        label.getStyleClass().remove("style-positive-number");
+        label.getStyleClass().remove("style-negative-number");
+        if (pressedCounter > 0) {
+            label.getStyleClass().add("style-positive-number");
+        } else if (pressedCounter < 0){
+            label.getStyleClass().add("style-negative-number");
+        }
     }
 
     public static void main(final String[] args) {
