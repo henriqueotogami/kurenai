@@ -13,7 +13,7 @@ public class TestAnchorPane extends AnchorPane {
         final Square squareTwo = new Square();
         final Square squareThree = new Square();
         final Square squareFour = new Square();
-        final Square squareFifth = new Square();
+        final Square squareFive = new Square();
 
         final double offsetTop = 10.0;
         final double offsetRight = 10.0;
@@ -37,7 +37,7 @@ public class TestAnchorPane extends AnchorPane {
         setLeftAnchor(centerBox, offsetToCenter);
         setRightAnchor(centerBox,offsetToCenter);
 
-        centerBox.getChildren().add(squareFifth);
+        centerBox.getChildren().add(squareFive);
         getChildren().addAll(squareOne, squareTwo, squareThree, squareFour, centerBox);
         System.out.println("TestAnchorPane - TestAnchorPane(): END");
     }
