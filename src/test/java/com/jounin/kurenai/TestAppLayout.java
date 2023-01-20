@@ -14,7 +14,8 @@ public class TestAppLayout extends Application {
         final int heightScene = 600;
 
 //        root = new TestAnchorPane();
-        root = new TestBorderPane();
+//        root = new TestBorderPane();
+        root = new TestFlowPane();
         final Scene mainScene = new Scene(root, widthScene, heightScene);
 
         primaryStage.setScene(mainScene);
