@@ -11,12 +11,12 @@ public class Square extends Rectangle {
             "#fb750e", "#6657a8", "#f9060e"
     };
 
-    public Square() { this(100,100); }
+    public Square() { this(100); }
 
-    public Square(final int width, final int height) {
+    public Square(final int size) {
         System.out.println("Square - Square(): BEGIN");
-        setWidth(width);
-        setHeight(height);
+        setWidth(size);
+        setHeight(size);
         final Color colorWeb = Color.web(arrayColors[indexColor]);
         setFill(colorWeb);
         indexColor++;

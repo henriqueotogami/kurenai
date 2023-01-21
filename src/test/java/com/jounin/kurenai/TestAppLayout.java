@@ -17,7 +17,8 @@ public class TestAppLayout extends Application {
 //        root = new TestBorderPane();
 //        root = new TestFlowPane();
 //        root = new TestGridPane();
-        root = new TestStackPane();
+//        root = new TestStackPane();
+        root = new TestTilePane();
         final Scene mainScene = new Scene(root, widthScene, heightScene);
 
         primaryStage.setScene(mainScene);
