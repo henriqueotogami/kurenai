@@ -1,0 +1,18 @@
+.style-main-scene {
+    -fx-background-color: linear-gradient(to right, rgb(0,242,96), rgb(5,117,230));
+}
+
+.style-title{
+    -fx-font-size: 24px;
+    -fx-text-fill: #FFF;
+}
+
+.style-label {
+    -fx-font-size: 16px;
+    -fx-text-fill: #FFF;
+}
+
+.style-button {
+    -fx-font-size: 16px;
+    -fx-text-fill: #FFF;
+}

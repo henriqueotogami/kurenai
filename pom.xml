@@ -60,7 +60,8 @@
                         <!-- Default configuration for running with: mvn clean javafx:run -->
                         <id>default-cli</id>
                         <configuration>
-                            <mainClass>com.jounin.kurenai/com.jounin.kurenai.controller.HelloApplication</mainClass>
+<!--                            <mainClass>com.jounin.kurenai/com.jounin.kurenai.controller.HelloApplication</mainClass>-->
+                            <mainClass>com.jounin.kurenai/com.jounin.kurenai.controller.fxml.AppFXML</mainClass>
                             <launcher>app</launcher>
                             <jlinkZipName>app</jlinkZipName>
                             <jlinkImageName>app</jlinkImageName>
@@ -74,9 +75,10 @@
         </plugins>
         <resources>
             <resource>
-                <directory>src/main/resources/com/jounin/kurenai/controller</directory>
+                <directory>src/main/resources/com/jounin/kurenai</directory>
                 <includes>
                     <include>**/*.css</include>
+                    <include>**/*.fxml</include>
                 </includes>
             </resource>
         </resources>

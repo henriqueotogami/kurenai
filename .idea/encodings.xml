@@ -4,6 +4,8 @@
     <file url="file://$PROJECT_DIR$/com.jounin.kurenai" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/java" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/com/jounin/kurenai" charset="UTF-8" />
     <file url="file://$PROJECT_DIR$/src/main/resources/com/jounin/kurenai/controller" charset="UTF-8" />
+    <file url="file://$PROJECT_DIR$/src/main/resources/com/jounin/kurenai/controller/fxml" charset="UTF-8" />
   </component>
 </project>
