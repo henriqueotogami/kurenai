@@ -12,6 +12,7 @@
       <entry name="!?*.clj" />
       <entry name="!?*.aj" />
       <entry name="!?*.css" />
+      <entry name="!?*.fxml" />
     </wildcardResourcePatterns>
     <annotationProcessing>
       <profile name="Maven default annotation processors profile" enabled="true">
