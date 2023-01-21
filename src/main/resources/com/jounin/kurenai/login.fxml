@@ -8,12 +8,12 @@
         prefWidth="350.0"
         xmlns="http://javafx.com/javafx/11.0.14-internal"
         xmlns:fx="http://javafx.com/fxml/1"
-        fx:controller="com.jounin.kurenai.controller.fxml.AppFXML">
+        fx:controller="com.jounin.kurenai.controller.fxml.LoginController">
 
     <Label text="Welcome!" GridPane.columnIndex="0" GridPane.rowIndex="0"/>
     <Label text="E-mail: " GridPane.columnIndex="0" GridPane.rowIndex="1"/>
-    <TextField GridPane.columnIndex="1" GridPane.rowIndex="1"/>
+    <TextField fx:id="emailField" GridPane.columnIndex="1" GridPane.rowIndex="1"/>
     <Label text="Password: " GridPane.columnIndex="0" GridPane.rowIndex="2"/>
-    <PasswordField GridPane.columnIndex="1" GridPane.rowIndex="2"/>
-    <Button text="Enter" GridPane.columnIndex="0" GridPane.rowIndex="3"/>
+    <PasswordField fx:id="passwordField" GridPane.columnIndex="1" GridPane.rowIndex="2"/>
+    <Button text="Log in" GridPane.columnIndex="0" GridPane.rowIndex="3" onAction="#login"/>
 </GridPane>
