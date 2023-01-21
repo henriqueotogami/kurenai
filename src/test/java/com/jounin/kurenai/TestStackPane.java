@@ -1,6 +1,7 @@
 package com.jounin.kurenai;
 
 import com.jounin.kurenai.view.HorizontalBox;
+import javafx.application.Platform;
 import javafx.scene.layout.StackPane;
 
 public class TestStackPane extends StackPane {
@@ -36,6 +37,25 @@ public class TestStackPane extends StackPane {
          }
         }
     );
+
+    final Thread thread = new Thread(
+        () -> {
+            while(true){
+                try{
+                    Thread.sleep(3000);
+                    Platform.runLater(
+                        () -> {
+                            getChildren().get(0).toFront();
+                        }
+                    );
+                } catch(final Exception exception) {
+                    System.out.println(exception.getMessage());
+                }
+            }
+        }
+    );
+    thread.setDaemon(true);
+    thread.start();
         System.out.println("TestStackPane - TestStackPane(): END");
     }
 }
