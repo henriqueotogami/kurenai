@@ -20,7 +20,7 @@ public class AppFXML extends Application {
             System.out.println("AppFXML - start(): fileConfigurationFXML: " + fileConfigurationFXML.toString());
             final GridPane root = FXMLLoader.load(fileConfigurationFXML);
             final int widthScene = 350;
-            final int heightScene = 400;
+            final int heightScene = 350;
             final Scene mainScene = new Scene(root,widthScene,heightScene);
             mainScene.getStylesheets().add(fileStyleCss);
             primaryStage.setResizable(false);
