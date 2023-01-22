@@ -2,6 +2,7 @@ module com.jounin.kurenai {
 
     requires javafx.controls;
     requires javafx.fxml;
+    requires org.controlsfx.controls;
 
     opens com.jounin.kurenai.controller to javafx.fxml;
     opens com.jounin.kurenai.controller.fxml to javafx.fxml;
